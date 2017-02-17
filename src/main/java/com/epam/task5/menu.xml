@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu  xmlns="http://www.example.org/menu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/menu menu.xsd">
+    <course id="appetizer">
+        <dish id="A1">
+            <name>Брынза</name>
+            <description>Рассольный сыр</description>
+            <weight>75</weight>
+            <price>10</price>
+        </dish>
+    </course>
+    <course id="main">
+        <dish id="B1">
+            <name>Жульен</name>
+            <description>С курицей</description>
+            <weight>120</weight>
+            <price>145</price>
+        </dish>
+    </course>
+    <course id="breakfast">
+        <dish id="C1">
+            <name>Омлет</name>
+            <description>2 яйца</description>
+            <weight>100</weight>
+            <price>56</price>
+        </dish>
+    </course>
+</menu>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu  xmlns="http://www.example.org/menu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/menu menu.xsd">
+    <course id="appetizer">
+        <dish id="C1">
+            <name>Ассорти рыбное</name>
+            <description>Слабосоленая форель, семга</description>
+            <weight>100/20/15</weight>
+            <price>1</price>
+        </dish>
+        <dish id="C2">
+            <name>Тарталетки с красной икрой</name>
+            <description>Тарталетки с красной икрой</description>
+            <weight>60/50</weight>
+            <price>1</price>
+        </dish>
+        <dish id="C3">
+            <name>Бастурма</name>
+            <description>Вяленая вырезка из говяжьего мяса</description>
+            <weight>50/5</weight>
+            <price>1</price>
+        </dish>
+        <dish id="C4">
+            <name>Брынза</name>
+            <description>Рассольный сыр</description>
+            <weight>75/5</weight>
+            <price>1</price>
+        </dish>
+    </course>
+    <course id="main">
+        <dish id="H1">
+            <name>Лобио с шампиньонами</name>
+            <description>Фасоль с шампиньонами и грецким орехом</description>
+            <weight>150/5</weight>
+            <price>105</price>
+        </dish>
+        <dish id="H2">
+            <name>Жульен</name>
+            <description>1. с курицей</description>
+            <weight>120/1</weight>
+            <price>165</price>
+        </dish>
+    </course>
+    <course id="breakfast">
+        <dish id="B1">
+            <name>Глазунья</name>
+            <description>2 яйца</description>
+            <weight>150</weight>
+            <price>1</price>
+        </dish>
+        <dish id="B2">
+            <name>Омлет</name>
+            <description>23</description>
+            <weight>100</weight>
+            <price>2</price>
+        </dish>
+        <dish id="B3">
+            <name>Блинчики с мясом</name>
+            <description>Жареные блинчики с мясом</description>
+            <weight>150</weight>
+            <price>3</price>
+        </dish>
+    </course>
+</menu>-->
