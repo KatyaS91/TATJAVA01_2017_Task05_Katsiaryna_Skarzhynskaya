@@ -11,7 +11,8 @@ public class Dish {
     private String id;
     private int price;
 
-    public Dish() {}
+    public Dish() {
+    }
 
     public Dish(String name, String description, String weight, String id, int price) {
         this.name = name;

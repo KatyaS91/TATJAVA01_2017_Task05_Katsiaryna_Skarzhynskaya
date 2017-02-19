@@ -17,14 +17,14 @@ public class DomDemoParser {
     private final static String FILE_PATH = "C:\\Users\\User\\IdeaProjects\\Task5\\src\\main\\java\\com\\epam\\task5\\menu.xml";
 
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         DOMParser parser = new DOMParser();
         try {
             parser.parse(FILE_PATH);
         } catch (org.xml.sax.SAXException e) {
             System.out.println("dom error");
-        } catch (IOException e){
+        } catch (IOException e) {
             System.out.println("dom error");
         }
 
@@ -34,7 +34,7 @@ public class DomDemoParser {
         ArrayList<Dish> foodList;
         HashMap<String, ArrayList<Dish>> menu = new HashMap<String, ArrayList<Dish>>();
         String type = null;
-        Dish dish= null;
+        Dish dish = null;
 
         NodeList typeNodes = root.getElementsByTagName("course");
 
@@ -67,13 +67,13 @@ public class DomDemoParser {
         food.setName(getSingleChild(foodElement, "name").getTextContent().trim());
         food.setDescription(getSingleChild(foodElement, "description").getTextContent().trim());
         food.setWeight(getSingleChild(foodElement, "weight").getTextContent().trim());
-        if (getSingleChild(foodElement, "price").getTextContent().length() > 0){
+        if (getSingleChild(foodElement, "price").getTextContent().length() > 0) {
             food.setPrice(Integer.parseInt(getSingleChild(foodElement, "price").getTextContent()));
         }
         return food;
     }
 
-    private static Element getSingleChild(Element element, String childName){
+    private static Element getSingleChild(Element element, String childName) {
         NodeList nlist = element.getElementsByTagName(childName);
         Element child = (Element) nlist.item(0);
         return child;
