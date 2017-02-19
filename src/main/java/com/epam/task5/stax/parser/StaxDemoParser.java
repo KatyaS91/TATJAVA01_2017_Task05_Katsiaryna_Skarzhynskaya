@@ -44,16 +44,15 @@ public class StaxDemoParser {
                 case XMLStreamConstants.START_ELEMENT: elementName=MenuTagName.valueOf(reader.getLocalName().toUpperCase());
                 switch (elementName){
                     case COURSE:
-                        dishList = new ArrayList<Dish>();
+                    dishList = new ArrayList<Dish>();
                     type = reader.getAttributeValue(null,"id");
-                    case DISH:dish=new Dish();
-                    Integer id = Integer.parseInt(reader.getAttributeValue(null, "id"));
-                    dish.setId(id.toString());
+                    case DISH: dish = new Dish();
+                    dish.setId(reader.getAttributeValue(null, "id"));
                     break;
                 }
             break;
                 case XMLStreamConstants.CHARACTERS:
-                    String text  = reader.getText().trim();
+                    String text = reader.getText().trim();
                     if (text.isEmpty()){
                         break;
                     }
